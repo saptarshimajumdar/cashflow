@@ -9,7 +9,7 @@ app.post("/hdfcWebhook", async (req, res) => {
     //TODO: HDFC bank should ideally send us a secret so we know this is sent by them
     const paymentInformation: {
         token: string;
-        userId: string;
+        userId: string;//userid of my db not bank db
         amount: string
     } = {
         token: req.body.token,
