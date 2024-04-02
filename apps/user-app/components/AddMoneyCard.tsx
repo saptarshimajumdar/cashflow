@@ -5,7 +5,7 @@ import { Center } from "@repo/ui/center";
 import { Select } from "@repo/ui/select";
 import { useState } from "react";
 import { TextInput } from "@repo/ui/textinput";
-import { createOnRampTxn } from "../app/lib/actions/createOnRampTxn";
+import { createOnRampTransaction } from "../app/lib/actions/createOnRampTxn";
 
 const SUPPORTED_BANKS = [{
     name: "HDFC Bank",
@@ -42,9 +42,9 @@ export const AddMoney = () => {
         />
 
         <div className="flex justify-center pt-4">
-            <Button onClick={async() => {
-                await createOnRampTxn(amount*100,provider);
-                //window.location.href = redirectUrl || ""
+            <Button onClick={async () => {
+                await createOnRampTransaction(amount * 100, provider)
+                window.location.href = redirectUrl || "";
             }}>
             Add Money
             </Button>
