@@ -1,4 +1,4 @@
--users can add money using onramps.
--the bank webhook serves as a dummy bank api, you need to manually upprove the upramp-only then the balance will be added to you wallet
--p2p transfers supported
--data of all transactions and onramps stored
+- users can add money using onramps.
+- the bank webhook serves as a dummy bank api, you need to manually upprove the upramp-only then the balance will be added to you wallet
+- p2p transfers supported
+- data of all transactions and onramps stored
