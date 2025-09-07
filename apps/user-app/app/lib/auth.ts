@@ -12,7 +12,6 @@ export const authOptions = {
           },
           
           async authorize(credentials: any) {
-            // Do zod validation, OTP validation here
             const hashedPassword = await bcrypt.hash(credentials.password, 10);
             const existingUser = await db.user.findFirst({
                 where: {
